@@ -1,0 +1,21 @@
+{
+  "name": "dd_robot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "postinstall": "mkdir -p logs",
+    "start": "node index.js",
+    "prod": "pm2 start index.js --name dd_robot"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^3.1.0",
+    "redis": "^2.8.0",
+    "request": "^2.88.0",
+    "uuid": "^3.0.1"
+  }
+}
